@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         int x = Integer.parseInt(numberInput1.getText().toString());
         int y = Integer.parseInt(numberInput2.getText().toString());
 
-        int z = x + y;
+        int z =  x + y;
         output.setText(String.valueOf(z));
     }
     public void subtraction (View view) {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         int x = Integer.parseInt(numberInput1.getText().toString());
         int y = Integer.parseInt(numberInput2.getText().toString());
 
-        int z = x * y;
+        int z = x *  y;
         output.setText(String.valueOf(z));
     }
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         int x = Integer.parseInt(numberInput1.getText().toString());
         int y = Integer.parseInt(numberInput2.getText().toString());
 
-        int z = x / y;
+        float z = (float) x / (float) y;
         output.setText(String.valueOf(z));
     }
 }

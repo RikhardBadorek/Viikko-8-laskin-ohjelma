@@ -11,14 +11,15 @@
         android:id="@+id/OutputTextField"
         android:layout_width="120dp"
         android:layout_height="75dp"
-        android:inputType="number"
-        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewStart"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.539" />
 
     <EditText
         android:id="@+id/numberInput1"
@@ -49,11 +50,27 @@
         app:layout_constraintTop_toBottomOf="@+id/numberInput1" />
 
     <Button
+        android:id="@+id/MinusBTN"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#0E0808"
+        android:onClick="subtraction"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/MultiplyBTN"
+        app:layout_constraintStart_toStartOf="@+id/PlusBTN"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
+
+    <Button
         android:id="@+id/PlusBTN"
         android:layout_width="65dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#0E0707"
         android:onClick="addition"
         android:text="+"
@@ -66,7 +83,7 @@
         android:id="@+id/MultiplyBTN"
         android:layout_width="65dp"
         android:layout_height="64dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#100808"
         android:onClick="multiplication"
@@ -77,26 +94,10 @@
         app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
 
     <Button
-        android:id="@+id/MinusBTN"
-        android:layout_width="65dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#0E0808"
-        android:onClick="subtraction"
-        android:text="-"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toStartOf="@+id/MultiplyBTN"
-        app:layout_constraintStart_toStartOf="@+id/PlusBTN"
-        app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
-
-    <Button
         android:id="@+id/DivideBTN"
         android:layout_width="65dp"
         android:layout_height="64dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#0B0707"
         android:onClick="division"
