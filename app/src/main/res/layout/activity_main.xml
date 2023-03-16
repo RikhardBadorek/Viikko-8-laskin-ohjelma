@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#702196F3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/OutputTextField"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <EditText
+        android:id="@+id/numberInput1"
+        android:layout_width="171dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Input a number"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberInput2"
+        android:layout_width="174dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Input a number"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput1" />
+
+    <Button
+        android:id="@+id/PlusBTN"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#0E0707"
+        android:onClick="addition"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput2"
+        app:strokeColor="#BF1515" />
+
+    <Button
+        android:id="@+id/MultiplyBTN"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#100808"
+        android:onClick="multiplication"
+        android:text="X"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/DivideBTN"
+        app:layout_constraintStart_toEndOf="@+id/MinusBTN"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
+
+    <Button
+        android:id="@+id/MinusBTN"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#0E0808"
+        android:onClick="subtraction"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/MultiplyBTN"
+        app:layout_constraintStart_toStartOf="@+id/PlusBTN"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
+
+    <Button
+        android:id="@+id/DivideBTN"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#0B0707"
+        android:onClick="division"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MultiplyBTN"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
